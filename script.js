@@ -12,7 +12,7 @@ daripada harus dijelasin pake kata-kata.
 
 `,
 
-/*  `
+ `
 Ada hal yang pengen banget kamu tau,
 dan aku pengen kamu denger ini baik-baik.
 
@@ -79,7 +79,7 @@ sayang tanpa syarat, dan bakal selalu ada di samping kamu
 lewat badai apa pun yang datang nanti.
 
 I LOVE YOU SO MUCH, My Love 🤍 
-`   */
+`  
 ];
 
 let currentPage = 0;
@@ -224,7 +224,7 @@ function checkYesButton() {
 }
 
 /* =========================
-   WHATSAPP REDIRECT
+  WHATSAPP REDIRECT
 ========================= */
 yesBtn.addEventListener("click", () => {
   const userMessage = loveMessage.value.trim();

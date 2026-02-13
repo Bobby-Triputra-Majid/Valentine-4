@@ -77,7 +77,7 @@ Aku janji bakal sayangin kamu terus,
 dan bakal selalu ada di samping kamu lewatin badai apa pun yang bakal datang nanti.
 kita pasti bisa lewatin semuanya bareng-bareng kan sayangggg?
 
-I LOVE YOU SO MUCH, MyLovee 🤍 
+I LOVE YOU SOMUCH, MyLovee 🤍 
 `  
 ];
 

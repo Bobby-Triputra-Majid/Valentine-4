@@ -1,18 +1,18 @@
 /* =========================
    PAGES DATA & BASE LOGIC
 ========================= */
-const pages = [
-`
+ const pages = [
+ `
 Happy Valentine & Happy Anniversary yang ke-4 tahun, Sayangku! 🤍
 
-Jujur aku bingung mau mulai dari mana, 
+ Jujur aku bingung mau mulai dari mana, 
 soalnya kalau soal perasaan ke kamu, 
 rasanya jauh lebih gampang buat dirasain 
 daripada harus dijelasin pake kata-kata.
 
 `,
 
-  `
+/*  `
 Ada hal yang pengen banget kamu tau,
 dan aku pengen kamu denger ini baik-baik.
 
@@ -78,11 +78,8 @@ Aku janji bakal sayangin kamu terus,
 sayang tanpa syarat, dan bakal selalu ada di samping kamu 
 lewat badai apa pun yang datang nanti.
 
-Aku sayang bangetttt sama kamu, 
-JANGAN JUTEK-JUTEK YAA! Hehehe.
-
-I LOVE YOU SO MUCH, My Love 🤍
-`  
+I LOVE YOU SO MUCH, My Love 🤍 
+`   */
 ];
 
 let currentPage = 0;

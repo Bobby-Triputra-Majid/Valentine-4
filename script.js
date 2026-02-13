@@ -72,7 +72,6 @@ dan gak bakal berubah dan selalu pilih kamu.
 `,
 
 `
-Jadi, aku tutup surat ini dengan kejujuran yang paling dalam.
 Aku punya kamu, dan kamu punya aku.
 Aku janji bakal sayangin kamu terus, 
 dan bakal selalu ada di samping kamu lewatin badai apa pun yang bakal datang nanti.

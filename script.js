@@ -5,7 +5,7 @@
  `
 Happy Valentine & Happy Anniversary yang ke-4 tahun, Sayangku! 🤍
 
- Jujur aku bingung mau mulai dari mana, 
+Jujur aku bingung mau mulai dari mana, 
 soalnya kalau soal perasaan ke kamu, 
 rasanya jauh lebih gampang buat dirasain 
 daripada harus dijelasin pake kata-kata.
@@ -14,7 +14,7 @@ daripada harus dijelasin pake kata-kata.
 
  `
 Ada hal yang pengen banget kamu tau,
-dan aku pengen kamu denger ini baik-baik.
+dan aku pengen kamu dengerin aku.
 
 Aku bener-bener bahagia banget
 sama cara kamu sayangin aku,
@@ -24,26 +24,28 @@ cuma dengan jadi diri kamu sendiri.
 `,
 
 `
-Wihhh cayanggg, kita udah 4 tahun aja ni! 
-Gak berasa banget ya? Gitu ya kalo nemu orang yang tepat, 
+Cayangggggg, kita udah 4 tahun aja niiiiiiii! 
+padahal rasanya baru kemarin kita unboxing kado kan
+Gitu ya kalo nemu orang yang tepat, 
 4 tahun pun berasa bentar kalo dijalanin bareng hehe.
 
 Aku bersyukur banget bisa dapetin kamu dan masih bertahan sampai detik ini.
-Makasih ya sayang udah sabar banget sama aku selama ini.
+Makasi ya sayang udah sabar banget sama aku selama ini.
+Makasi ya sayang selalu ada buat aku,
+
 `,
 
 `
 Aku suka banget gimana cara kamu perhatiin aku.
 Gimana kamu selalu peduli, selalu nyariin aku, 
-bahkan buat hal-hal kecil sekalipun.
+bahkan buat hal-hal kecil sekalipun,
 
-Itu bikin aku ngerasa bener-bener dianggap,
-bikin aku ngerasa dipilih,
-dan bikin hati aku tenang banget kalau ada di deket kamu.
+Itu bikin aku ngerasa bener-bener disayanggg sama kamu,
+dan bikin hati aku tenang banget kalau ada di deket kamu,
+pokoknya aku beruntung banget dapetin kamu, Sayangkuuuu.
 `,
 
 `
-Aku juga mau kamu tau satu hal:
 Aku gak pernah ngerasa terbebani sedikitpun
 sama apa pun yang kamu minta dari aku.
 
@@ -54,36 +56,36 @@ Karena kebahagiaan kamu itu segalanya buat aku.
 
 `
 Ngeliat kamu senyum,
-ngeliat kamu ngerasa disayang dan ngerasa aman,
-itu udah lebih dari cukup buat bikin aku ikut bahagia juga.
+ngeliat kamu ngerasa disayang dan liat kamu bahagia,
+itu udah lebih dari cukup buat bikin aku ikut bahagia juga sayanggg.
 
 Kamu gak perlu khawatir soal aku atau perasaan aku.
-Bahagia aku itu ya adanya di kamu, Sayang.
+Bahagia aku itu ya kamu, Sayang.
 `,
 
 `
 Aku pengen kamu ada di setiap cerita yang aku buat nanti,
 sama kayak aku yang berharap bisa ada di setiap momen hidup kamu ke depannya.
 
-Aku gak mau hubungan yang setengah-setengah.
 Aku pilih kamu, sepenuhnya, tulus, 
-dan gak bakal berubah.
+dan gak bakal berubah dan selalu pilih kamu.
 `,
 
 `
 Jadi, aku tutup surat ini dengan kejujuran yang paling dalam.
 Aku punya kamu, dan kamu punya aku.
-
 Aku janji bakal sayangin kamu terus, 
-sayang tanpa syarat, dan bakal selalu ada di samping kamu 
-lewat badai apa pun yang datang nanti.
+dan bakal selalu ada di samping kamu lewatin badai apa pun yang bakal datang nanti.
+kita pasti bisa lewatin semuanya bareng-bareng kan sayangggg?
 
-I LOVE YOU SO MUCH, My Love 🤍 
+I LOVE YOU SO MUCH, MyLovee 🤍 
 `  
 ];
 
 let currentPage = 0;
 let isTyping = false;
+
+
 
 const introText = document.getElementById("introText");
 const readBtn = document.getElementById("readBtn");
@@ -154,7 +156,7 @@ function showPage(index) {
   pageEl.style.animation = "openPage 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) forwards";
 
   let i = 0;
-  const text = pages[index];
+const text = pages[index];
 
   function typeWriter() {
     if (i < text.length) {
@@ -173,7 +175,10 @@ function showPage(index) {
    NEXT BUTTON
 ========================= */
 nextBtn.addEventListener("click", () => {
+
   if (isTyping) return;
+  
+
 
   if (currentPage < pages.length - 1) {
     currentPage++;
@@ -190,25 +195,30 @@ nextBtn.addEventListener("click", () => {
 });
 
 /* =========================
-   GLASS PROMISE LOGIC
+   GLASS PROMISE LOGIC (Ganti bagian ini)
 ========================= */
 let promiseActive = false;
 
 if (promiseBtn) {
   promiseBtn.addEventListener("click", () => {
-    promiseBtn.classList.toggle("active");
+    // Baris ini sangat penting untuk memicu perubahan warna di CSS
+    promiseBtn.classList.toggle("active"); 
+    
+    // Mengecek apakah tombol sedang dalam keadaan 'active'
     promiseActive = promiseBtn.classList.contains("active");
 
+    // Efek transisi halus untuk menghilangkan hint
     if (promiseActive) {
       promiseHint.style.opacity = 0;
+      promiseHint.style.pointerEvents = "none";
     } else {
       promiseHint.style.opacity = 0.7;
+      promiseHint.style.pointerEvents = "auto";
     }
 
     checkYesButton();
   });
 }
-
 if (loveMessage) {
   loveMessage.addEventListener("input", () => {
     checkYesButton();

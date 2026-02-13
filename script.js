@@ -239,7 +239,7 @@ yesBtn.addEventListener("click", () => {
 
   const message = encodeURIComponent(
     "Yes.\n" +
-    "I choose you, always. 🤍 \n" +
+    "I choose you, always. \n" +
     userMessage
   );
 
